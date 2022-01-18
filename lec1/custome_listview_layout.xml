@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:textSize="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_margin="15dp"></Button>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:layout_marginLeft="10dp"
+        android:textSize="40dp"
+        android:layout_margin="15dp"></Button>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/inner"
+        android:weightSum="100"
+        >
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:layout_weight="30"
+        android:id="@+id/abc"
+
+        android:layout_marginLeft="10dp"
+        android:text="+"
+        ></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:layout_weight="30"
+        android:id="@+id/minus"
+
+        android:layout_marginLeft="10dp"
+        android:text="-"
+        ></Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40dp"
+
+            android:layout_marginLeft="10dp"
+            android:id="@+id/mul"
+            android:layout_weight="30"
+            android:text=" * "
+            ></Button>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Extra button"
+        ></Button>
+
+</LinearLayout>

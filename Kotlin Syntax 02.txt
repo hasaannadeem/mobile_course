@@ -1,0 +1,228 @@
+/*
+////Classes
+class Student
+{
+    
+    val regNo:Int = 202
+    val stdName = "Arham shahid"
+    
+    fun printStd():String
+    {
+        return (""+regNo + " - "+stdName)
+    }
+    
+    
+}
+
+fun main()
+{
+    
+    val std1 :Student = Student()
+    var abc=std1.printStd()
+    println(abc)
+    
+    
+}
+*/
+
+// constructors
+// Primary construtor
+/*
+class Student (var reg:Int, var name:String)
+{
+    
+    val regNo:Int = reg
+    val stdName = name
+    
+    fun printStd():String
+    {
+        return (""+regNo + " - "+stdName)
+    }
+    
+    
+}
+
+fun main()
+{
+    
+    val std1 :Student = Student(1001, "Muhammad Azeem")
+    var abc=std1.printStd()
+    println(abc)
+    
+    
+}*/
+
+/*
+class Student ()
+{
+    
+    var regNo:Int?=null
+    var stdName:String?=null
+    
+    //secondary constructor
+    constructor(reg:Int, name:String):this() // call to primary constructor
+    {
+        regNo = reg
+        stdName = name
+    }
+    
+    fun printStd():String
+    {
+        return (""+regNo + " - "+stdName)
+    }
+    
+    
+}
+
+fun main()
+{
+    
+    val std1 :Student = Student()
+    val std2 :Student = Student(1001, "Muhammad Azeem")
+    var abc=std1.printStd()
+    println(abc)
+    
+    println(std2.printStd())
+    
+    
+}
+*/
+
+//interfaces and inheritance
+/*
+interface shape{
+    
+    fun draw()
+}
+
+public class line():shape
+{
+    override fun draw()
+    {
+        println(" I shall draw a line.. ")
+    }
+}
+
+
+
+fun main()
+{
+   var temp : shape = line() // can be of type line 
+    temp.draw()
+    
+}
+*/
+
+// Classes and inheritance
+/*
+abstract class Person
+{
+  var age:Int?=null
+   var name:String? =null 
+  
+   abstract fun setName(ag:Int, nm:String)
+   abstract fun printPerson()
+    
+    
+}
+class Doctor(): Person()
+{
+    var salary:Int ?=null 
+    override fun setName(ag:Int, nm:String)
+    {
+        age=ag
+        name=nm
+    }
+    fun setSalary(sal:Int)
+    {
+        salary= sal
+    }
+    override fun printPerson()
+    {
+        println("Name of doctor is: "+ name )
+        println("Age is: "+age)
+        println("Doctor $name is getting salary: "+salary)
+    }
+    
+}
+
+fun main()
+{
+    
+    var  d:Doctor = Doctor()
+
+    d.setName(26, "Dr. yasir aziz")
+    d.setSalary(85000)
+    d.printPerson()
+    
+    
+    
+}
+*/
+
+// INNER AND OUTER CLASSES
+/*
+class outer
+{
+    var message = "I am from outer class"
+    
+    inner class iner{
+        
+        fun callMe()
+        {
+            println("i am from inner class and accesing outer class message e.g. "+message)
+        }
+    }// inner class
+    
+    
+}// outer class
+
+fun main()
+{
+    var obj:outer=outer()
+    obj.iner().callMe()
+}
+*/
+
+// function overloading...
+/*
+class arithmatic
+{
+    fun add(first: Int, second:Int):Int
+    {
+        return first + second
+    }
+    
+    fun add(first: Int, second:Int, third:Int):Int
+    {
+        return first + second+ third
+    }
+    fun add(first: Int, second:Int, third:Int, fourth:Int):Int
+    {
+        return first + second+ third + fourth
+    }
+    
+    fun add(vararg numbers:Int):Int
+    {
+        var sum=0
+        for(number in numbers)
+        {
+            sum += number
+        }
+        return sum
+    }
+    
+    
+    
+}
+
+fun main()
+{
+    var ar:arithmatic=arithmatic()
+    println(ar.add(2,5))
+    println(ar.add(2,5, 45, 78))
+    println(arithmatic().add(15, 15, 20))
+    println(arithmatic().add(1, 2, 3, 4, 5, 6, 7, 8, 9, 10))
+}
+
+*/

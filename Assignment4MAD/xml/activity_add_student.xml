@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddStudent">
+
+
+    <EditText
+        android:id="@+id/et3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etJoiningDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEmployeeID" />
+
+    <EditText
+        android:id="@+id/etEmployeeID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:hint="employee ID"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/et3"
+        app:layout_constraintStart_toStartOf="@+id/eName"
+        app:layout_constraintTop_toBottomOf="@+id/eName" />
+
+    <EditText
+        android:id="@+id/eName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="17dp"
+        android:ems="10"
+        android:hint="employee name "
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etEmployeeID"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    e<EditText
+    android:id="@+id/etJoiningDate"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="30dp"
+    android:layout_marginLeft="30dp"
+    android:ems="10"
+    android:hint="Joining Date"
+    android:inputType="phone"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/et3" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="271dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="547dp"
+        android:text="Employee Data"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="60dp"
+        android:text="submit data"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+

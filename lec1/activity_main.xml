@@ -1,0 +1,57 @@
+<LinearLayout
+
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/outerLayout"
+    android:orientation="vertical"
+    android:background="#82DADA"
+    android:padding="50dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etFirst"
+        android:layout_margin="20dp"
+        android:background="#ffffff"
+        android:minHeight="40dp"
+        android:hint="Enter first value here to calculate"
+        ></EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etSecond"
+        android:layout_margin="20dp"
+        android:background="#ffffff"
+        android:minHeight="40dp"
+        android:hint="Enter second value here"
+        ></EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Answer"
+        android:textSize="40dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/answer"></TextView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/plus"
+        android:text="+"
+        android:textSize="40dp"
+        android:layout_gravity="center"></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/minus"
+        android:text="-"
+        android:textSize="40dp"
+        android:layout_gravity="center"></Button>
+
+
+</LinearLayout>

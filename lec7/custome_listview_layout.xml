@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:layout_height="wrap_content"
+    android:background="#000000">
+
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="30"
+        android:src="@drawable/settings"></ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:layout_weight="70"
+        android:layout_margin= "20dp"
+        android:background="@color/design_default_color_error"
+        android:textColor="#FFFFFF"
+        android:text="hello"
+        android:textSize="50dp"
+        android:paddingLeft="50dp"
+        android:id="@+id/display"></TextView>
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Your name here"
+    android:background="@drawable/border"
+    android:minHeight="60dp"
+    android:layout_margin="20dp"
+    ></EditText>
+
+
+
+
+</LinearLayout>
